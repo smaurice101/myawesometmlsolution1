@@ -13,13 +13,7 @@
      - **Details**
      - **Explanation**
    * - TML Solution Studio Docker Run Command
-     - docker run -d \-\-net=host \-\-env MAINHOST=127.0.0.1 \-\-env AIRFLOWPORT=9000 
-
-       -v <change to your local folder>:/dagslocalbackup:z 
-
-       -v /var/run/docker.sock:/var/run/docker.sock:z 
-
-       \-\-env GITREPOURL=https://github.com/<Enter Github username>/raspberrypi.git 
+     - docker run -d \-\-net=host \-\-env MAINHOST=127.0.0.1 \-\-env AIRFLOWPORT=9000 -v <change to your local folder>:/dagslocalbackup:z -v /var/run/docker.sock:/var/run/docker.sock:z \-\-env GITREPOURL=https://github.com/<Enter Github username>/raspberrypi.git 
 
        \-\-env CHIP=AMD64 \-\-env TSS=1 \-\-env SOLUTIONNAME=TSS 
 
