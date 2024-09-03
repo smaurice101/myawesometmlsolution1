@@ -15,25 +15,25 @@
    * - TML Solution Studio Docker Run Command
      - docker run -d \-\-net=host \-\-env MAINHOST=127.0.0.1 \-\-env AIRFLOWPORT=9000 
 
- -v <change to your local folder>:/dagslocalbackup:z 
+       -v <change to your local folder>:/dagslocalbackup:z 
 
- -v /var/run/docker.sock:/var/run/docker.sock:z 
+       -v /var/run/docker.sock:/var/run/docker.sock:z 
 
- \-\-env GITREPOURL=https://github.com/<Enter Github username>/raspberrypi.git 
+       \-\-env GITREPOURL=https://github.com/<Enter Github username>/raspberrypi.git 
 
- \-\-env CHIP=AMD64 \-\-env TSS=1 \-\-env SOLUTIONNAME=TSS 
+       \-\-env CHIP=AMD64 \-\-env TSS=1 \-\-env SOLUTIONNAME=TSS 
 
- \-\-env READTHEDOCS=<Enter your readthedocs token> 
+       \-\-env READTHEDOCS=<Enter your readthedocs token> 
 
- \-\-env  GITUSERNAME=<Enter your Github username> 
+       \-\-env  GITUSERNAME=<Enter your Github username> 
 
- \-\-env GITPASSWORD=<Enter personal access token> 
+       \-\-env GITPASSWORD=<Enter personal access token> 
 
- \-\-env DOCKERUSERNAME=<Enter Dockerhub username> 
+       \-\-env DOCKERUSERNAME=<Enter Dockerhub username> 
 
- \-\-env DOCKERPASSWORD=<Enter your docker hub password> 
+       \-\-env DOCKERPASSWORD=<Enter your docker hub password> 
 
- maadsdocker/tml-solution-studio-with-airflow-amd64
+       maadsdocker/tml-solution-studio-with-airflow-amd64
      - This is the TML Solution Studio Docker Run command.  
 
        Note for MAC users change amd64 to arm64 in 
